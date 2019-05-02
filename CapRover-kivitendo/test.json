@@ -1,0 +1,19 @@
+{
+    "captainVersion": "1",
+    "documentation": "Taken from https://hub.docker.com/pivotfox/kivitendo",
+    "dockerCompose": {
+      "version": "3.3",
+      "services": {
+        
+        "$$cap_appname": {
+          "image": "pivotfox/kivitendo",
+          
+          "volumes": [
+            "$$cap_appname-data:/data/kivi"
+          ],
+          "restart": "always"
+          
+        }
+      }
+    }
+}
